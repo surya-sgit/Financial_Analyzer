@@ -1,0 +1,37 @@
+# Core framework
+crewai==0.130.0
+crewai-tools==0.47.1
+
+# Web framework
+fastapi>=0.110.3
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# LLM providers (install the one you use)
+openai>=1.30.5
+
+# PDF processing
+# BUG FIX: Added missing PDF dependencies (PyPDFLoader requires pypdf)
+pypdf>=4.2.0
+langchain-community>=0.2.5
+langchain-core>=0.2.7
+
+# Environment management
+python-dotenv>=1.0.1
+
+# Queue worker (bonus feature)
+redis>=5.0.4
+celery>=5.4.0
+flower>=2.0.1  # Celery monitoring UI
+
+# Database (bonus feature)
+sqlalchemy>=2.0.30
+alembic>=1.13.1
+
+# Data processing
+pandas>=2.2.2
+numpy>=1.26.4
+
+# Utilities
+pydantic>=2.7.1
+httpx>=0.27.0
